@@ -10,7 +10,7 @@
     $visitor_email = filter_input(INPUT_POST, 'email');
     $visitor_msg = filter_input(INPUT_POST, 'message');
     
-     echo "Fields: " . $visitor_name . $visitor_email . $visitor_msg;  
+    /* echo "Fields: " . $visitor_name . $visitor_email . $visitor_msg;  */
     
     // Validate inputs
     if ($visitor_name == null || $visitor_email == null ||
