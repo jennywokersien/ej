@@ -2,7 +2,7 @@
 # Script to create ejdesign database
 # Name           Date         Description
 # Jenny          8/28/2020    Initial deployment
-#
+# Jenny          9/3/2020     Added db user
 #
 #************************************************************************
 
@@ -191,4 +191,10 @@ INSERT INTO visitor
 	(visitor_name, visitor_email, visitor_msg, visit_date, employeeID)
 VALUES
 	('Horace','horace@me.com','Question for you!', NOW(), 1);
+
+use ejdesign;  
+GRANT SELECT, INSERT, UPDATE
+ON ejdesign.*
+TO ej_user
+IDENTIFIED by 'Pa$$w0rd';
     
